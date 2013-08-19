@@ -54,7 +54,6 @@
          -->
     </properties>
     <modules>
-        <module>OpenConcerto</module>
         <module>openconcerto</module>
     </modules>
 
