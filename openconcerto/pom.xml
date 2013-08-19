@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.openconcerto</groupId>
+		<artifactId>openconcerto-parent</artifactId>
+		<version>1.1</version>
+	</parent>
+	<artifactId>openconcerto</artifactId>
+	<name>OpenConcerto</name>
+	<description>Un logiciel professionnel de gestion, 100% libre ! OpenConcerto, ERP ouvert et modulaire, est adaptable facilement afin de fournir un outil simple et efficace.
+
+6 bonnes raisons de choisir ce logiciel :
+- un logiciel ouvert (open source) et gratuit (pas de coût de licence)
+- un seul logiciel pour gérer l'ensemble de votre activité
+- une ergonomie intuitive
+- un logiciel professionnel adaptable à vos besoins
+- fonctionne sous Windows, Linux et MacOS
+- multi-société, multi-utilisateur, mode monoposte ou multiposte en réseau
+</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbutils</groupId>
+			<artifactId>commons-dbutils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-jxpath</groupId>
+			<artifactId>commons-jxpath</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jgoodies</groupId>
+			<artifactId>forms</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jvnet.hudson</groupId>
+			<artifactId>ganymed-ssh-2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>oro</groupId>
+			<artifactId>oro</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>jdom</artifactId>
+					<groupId>jdom</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>jfree</groupId>
+			<artifactId>jcommon</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jgrapht</groupId>
+			<artifactId>jgrapht</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jopendocument</groupId>
+			<artifactId>jOpenDocument</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ognl</groupId>
+			<artifactId>ognl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.birt.runtime.3_7_1</groupId>
+			<artifactId>org.apache.xml.resolver</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.rxtx</groupId>
+			<artifactId>rxtx</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jpos</groupId>
+			<artifactId>jpos</artifactId>
+		</dependency>
+	</dependencies>
+</project>
