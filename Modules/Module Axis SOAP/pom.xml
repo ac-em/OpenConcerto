@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>modules.custumerrelationship.lead</artifactId>
+    <artifactId>modules.axis.soap</artifactId>
 
     <name>Module Lead</name>
     <description>Open Concerto: Module Lead</description>
 
     <packaging>jar</packaging>
-
 
     <parent>
     	<artifactId>openconcerto-modules</artifactId>
@@ -21,9 +20,20 @@
     		<scope>provided</scope>
     	</dependency>
     	<dependency>
-    		<groupId>commons-collections</groupId>
-    		<artifactId>commons-collections</artifactId>
-    		<scope>provided</scope>
+    		<groupId>axis</groupId>
+    		<artifactId>axis</artifactId>
+    	</dependency>
+    	<dependency>
+    		<groupId>commons-discovery</groupId>
+    		<artifactId>commons-discovery</artifactId>
+    	</dependency>
+    	<dependency>
+    		<groupId>javax.xml</groupId>
+    		<artifactId>jaxrpc</artifactId>
+    	</dependency>
+    	<dependency>
+    		<groupId>wsdl4j</groupId>
+    		<artifactId>wsdl4j</artifactId>
     	</dependency>
     </dependencies>
 </project>
