@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.openconcerto</groupId>
 		<artifactId>openconcerto-parent</artifactId>
-		<version>1.1</version>
+		<version>1.2b</version>
 	</parent>
 	<artifactId>openconcerto</artifactId>
 	<name>OpenConcerto</name>
@@ -20,6 +20,10 @@
 </description>
 
 	<dependencies>
+		<dependency>
+			<groupId>jre</groupId>
+			<artifactId>javaws</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>

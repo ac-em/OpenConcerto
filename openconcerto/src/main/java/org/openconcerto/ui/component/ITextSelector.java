@@ -246,6 +246,18 @@ public class ITextSelector extends JPanel implements ValueWrapper<String>, Docum
             public void removeCurrentText() {
                 ITextSelector.this.removeCurrentText();
             }
+
+			@Override
+			public boolean canReload() {
+				// TODO Stub de la méthode généré automatiquement
+				return false;
+			}
+
+			@Override
+			public void reload() {
+				// TODO Stub de la méthode généré automatiquement
+				
+			}
         }).listen();
 
         this.checkCache();
