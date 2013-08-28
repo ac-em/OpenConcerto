@@ -17,6 +17,7 @@
     <modules>
         <module>Module Lead</module>
 	<module>Module Axis SOAP</module>
+	<module>Modules/Module Badge</module>
     </modules>
 
 </project>
