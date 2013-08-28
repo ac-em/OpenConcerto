@@ -24,6 +24,6 @@ public final class DefaultAlternateTableCellRenderer extends AlternateTableCellR
     // TODO remove : now this to set colours like DefaultTableCellRenderer and not like
     // Alternate 
     public static Component setColors(final Component comp, final JTable table, boolean isSelected, int row) {
-        return TableCellRendererUtils.setColors(comp, table, isSelected, DEFAULT_BG_COLOR, null);
+        return TableCellRendererUtils.setColors(comp, table, isSelected, null, null);
     }
 }
