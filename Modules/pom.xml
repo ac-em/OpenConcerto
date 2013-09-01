@@ -24,6 +24,7 @@
 	<module>Module Google Docs</module>
 	<module>Module HTTP</module>
 	<module>Module OVH</module>
+	<module>Module OVH Cloud NAS</module>
     </modules>
 
 </project>

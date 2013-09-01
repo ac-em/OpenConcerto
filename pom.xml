@@ -314,6 +314,11 @@
     			<artifactId>soap-ovh</artifactId>
     			<version>1.24</version>
     		</dependency>
+    		<dependency>
+    			<groupId>org.openconcerto</groupId>
+    			<artifactId>modules.http</artifactId>
+    			<version>1.2b</version>
+    		</dependency>
     	</dependencies>
     </dependencyManagement>
 </project>
