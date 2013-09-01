@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>modules.axis.soap</artifactId>
 
-    <name>Module Lead</name>
+    <name>Module Axis SOAP</name>
     <description>Open Concerto: Module Lead</description>
 
     <packaging>jar</packaging>
