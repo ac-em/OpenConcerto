@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>modules.fidelityCarde</artifactId>
 
-	<name>Module Badge</name>
-	<description>Open Concerto: Module badge</description>
+	<name>Module Fidelity Card</name>
+	<description>Open Concerto: Fidelity Card</description>
 
 	<packaging>jar</packaging>
 

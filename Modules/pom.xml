@@ -17,7 +17,10 @@
     <modules>
         <module>Module Lead</module>
 	<module>Module Axis SOAP</module>
-	<module>Modules/Module Badge</module>
+	<module>Module Badge</module>
+	<!--module>Module EBICS</module-->
+	<module>Module Fidelity Card</module>
+	<module>Module Google API</module>
     </modules>
 
 </project>
