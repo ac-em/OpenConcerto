@@ -304,6 +304,16 @@
     			<artifactId>slf4j-api</artifactId>
     			<version>1.6.2</version>
     		</dependency>
+    		<dependency>
+    			<groupId>org.openconcerto</groupId>
+    			<artifactId>modules.axis.soap</artifactId>
+    			<version>1.2b</version>
+    		</dependency>
+    		<dependency>
+    			<groupId>com.ovh</groupId>
+    			<artifactId>soap-ovh</artifactId>
+    			<version>1.24</version>
+    		</dependency>
     	</dependencies>
     </dependencyManagement>
 </project>

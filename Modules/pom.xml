@@ -21,6 +21,9 @@
 	<!--module>Module EBICS</module-->
 	<module>Module Fidelity Card</module>
 	<module>Module Google API</module>
+	<module>Module Google Docs</module>
+	<module>Module HTTP</module>
+	<module>Module OVH</module>
     </modules>
 
 </project>
