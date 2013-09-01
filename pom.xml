@@ -263,6 +263,11 @@
     			<artifactId>bcprov-jdk16</artifactId>
     			<version>1.46</version>
     		</dependency>
+    		<dependency>
+    			<groupId>org.apache.santuario</groupId>
+    			<artifactId>xmlsec</artifactId>
+    			<version>1.4.5</version>
+    		</dependency>
     	</dependencies>
     </dependencyManagement>
 </project>

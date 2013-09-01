@@ -61,5 +61,9 @@
 			<groupId>org.bouncycastle</groupId>
 			<artifactId>bcprov-jdk16</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.santuario</groupId>
+			<artifactId>xmlsec</artifactId>
+		</dependency>
 	</dependencies>
 </project>
