@@ -132,7 +132,7 @@ public class CloudNASStorageEngine implements StorageEngine {
         this.userUrl = baseUrl + "/" + login;
         sardine = SardineFactory.begin(login, password);
 
-        final List<DavResource> resources = sardine.list(userUrl);
+        final List<DavResource> resources = sardine.getResources(userUrl);
         if (!sardine.exists(userUrl + "/OpenConcerto")) {
             sardine.createDirectory(userUrl + "/OpenConcerto");
         }

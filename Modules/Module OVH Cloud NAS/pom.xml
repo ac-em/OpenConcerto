@@ -12,7 +12,8 @@
 	<parent>
 		<artifactId>openconcerto-modules</artifactId>
 		<groupId>org.openconcerto</groupId>
-		<version>1.2b</version>
+		<relativePath>../</relativePath>
+		<version>1.2b3</version>
 	</parent>
 	<build>
 		<resources>
@@ -34,11 +35,34 @@
 			<groupId>org.openconcerto</groupId>
 			<artifactId>openconcerto</artifactId>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>bcmail-jdk14</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bcprov-jdk14</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bctsp-jdk14</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.sardine</groupId>
+			<artifactId>sardine</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.openconcerto</groupId>
-			<artifactId>modules.http</artifactId>
+			<artifactId>
+				org.openconcerto.modules.common.http
+			</artifactId>
 		</dependency>
 	</dependencies>
 	<version>1.0</version>
+	<organization>
+		<name>ILM Informatique</name>
+	</organization>
 </project>

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.openconcerto</groupId>
     <artifactId>openconcerto-parent</artifactId>
-    <version>1.2b</version>
+    <version>1.2b3</version>
 
     <name>OpenConcerto: Parent Aggregator</name>
     <description>Open Concerto: Parent Aggregator</description>
@@ -39,12 +39,12 @@
     </licenses>
     <properties>
          <!-- Release Info -->
-        <openconcerto.release.version>${project.version}</openconcerto.release.version>
         <!--openconcerto.release.codename>TBD</openconcerto.release.codename-->
         <openconcerto.scm.url>http://openconcerto.googlecode.com/svn/trunk</openconcerto.scm.url>
         <openconcerto.scm.connection>http://openconcerto.googlecode.com/svn/trunk</openconcerto.scm.connection>
 
         <!-- Build configuration -->
+    	<project.build.sourceEncoding>UTF8</project.build.sourceEncoding>
         <maven.compiler.target>1.6</maven.compiler.target>
         <maven.compiler.source>1.6</maven.compiler.source>
         <version.surefire.plugin>2.11</version.surefire.plugin>
@@ -59,6 +59,7 @@
             For example: <version.org.jboss.as.console>
          -->
         <httpclient.version>4.1.2</httpclient.version>
+        <openconcerto.version>${project.version}</openconcerto.version>
     </properties>
     <modules>
         <module>openconcerto</module>
@@ -132,7 +133,7 @@
     		<dependency>
     			<groupId>com.lowagie</groupId>
     			<artifactId>itext</artifactId>
-    			<version>2.1.5</version>
+    			<version>2.1.7</version>
     		</dependency>
     		<dependency>
     			<groupId>oro</groupId>
@@ -155,8 +156,8 @@
     			<version>1.1.2</version>
     		</dependency>
     		<dependency>
-    			<groupId>jgrapht</groupId>
-    			<artifactId>jgrapht</artifactId>
+    			<groupId>org.jgrapht</groupId>
+    			<artifactId>jgrapht-jdk1.5</artifactId>
     			<version>0.7.3</version>
     		</dependency>
     		<dependency>
@@ -217,7 +218,7 @@
     		<dependency>
     			<groupId>org.openconcerto</groupId>
     			<artifactId>openconcerto</artifactId>
-    			<version>1.2b</version>
+    			<version>1.2b3</version>
     		</dependency>
     		<dependency>
     			<groupId>axis</groupId>
@@ -321,4 +322,7 @@
     		</dependency>
     	</dependencies>
     </dependencyManagement>
+    <organization>
+    	<name>ILM Informatique</name>
+    </organization>
 </project>

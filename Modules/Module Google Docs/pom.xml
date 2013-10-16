@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>modules.google.docs</artifactId>
+	<artifactId>org.openconcerto.modules.google.docs</artifactId>
 
 	<name>Module Google Docs</name>
 
@@ -12,7 +12,7 @@
 	<parent>
 		<artifactId>openconcerto-modules</artifactId>
 		<groupId>org.openconcerto</groupId>
-		<version>1.2b</version>
+		<version>1.2b3</version>
 		<relativePath>../</relativePath>
 	</parent>
 	<build>
@@ -38,8 +38,13 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openconcerto</groupId>
-			<artifactId>modules.google.api</artifactId>
-			<version>1.2b</version>
+			<artifactId>
+				org.openconcerto.modules.common.http.google
+			</artifactId>
 		</dependency>
 	</dependencies>
+	<version>1.0</version>
+	<organization>
+		<name>ILM Informatique</name>
+	</organization>
 </project>

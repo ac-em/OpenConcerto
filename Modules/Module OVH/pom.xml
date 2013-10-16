@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>org.openconcerto.modules.customerrelationship.call.ovh</artifactId>
 
-	<name>Module OVH Cloud NAS</name>
+	<name>Module OVH</name>
 
 	<packaging>jar</packaging>
 
@@ -12,7 +12,7 @@
 	<parent>
 		<artifactId>openconcerto-modules</artifactId>
 		<groupId>org.openconcerto</groupId>
-		<version>1.2b</version>
+		<version>1.2b3</version>
 	</parent>
 	<build>
 		<resources>
@@ -37,7 +37,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openconcerto</groupId>
-			<artifactId>modules.axis.soap</artifactId>
+			<artifactId>org.openconcerto.modules.axis.soap</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.ovh</groupId>
@@ -45,4 +46,7 @@
 		</dependency>
 	</dependencies>
 	<version>1.0</version>
+	<organization>
+		<name>ILM Informatique</name>
+	</organization>
 </project>

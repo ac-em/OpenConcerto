@@ -1,30 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>openconcerto-modules</artifactId>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>openconcerto-modules</artifactId>
 
-    <name>OpenConcerto: Modules Aggregator</name>
-    <description>Open Concerto: Modules Aggregator</description>
+	<name>OpenConcerto: Modules Aggregator</name>
+	<description>Open Concerto: Modules Aggregator</description>
 	<parent>
 		<groupId>org.openconcerto</groupId>
 		<artifactId>openconcerto-parent</artifactId>
-		<version>1.2b</version>
-		<relativePath>..</relativePath>
+		<version>1.2b3</version>
+		<relativePath>../</relativePath>
 	</parent>
 
-    <packaging>pom</packaging>
+	<packaging>pom</packaging>
 
-    <modules>
-        <module>Module Lead</module>
-	<module>Module Axis SOAP</module>
-	<module>Module Badge</module>
-	<!--module>Module EBICS</module-->
-	<module>Module Fidelity Card</module>
-	<module>Module Google API</module>
-	<module>Module Google Docs</module>
-	<module>Module HTTP</module>
-	<module>Module OVH</module>
-	<module>Module OVH Cloud NAS</module>
-    </modules>
+	<modules>
+		<module>Module HTTP</module>
+		<module>Module Axis SOAP</module>
+		<module>Module Lead</module>
+		<module>Module Badge</module>
+		<module>Module EBICS</module>
+		<module>Module Fidelity Card</module>
+		<module>Module Google API</module>
+		<module>Module Google Docs</module>
+		<module>Module OVH</module>
+		<module>Module OVH Cloud NAS</module>
+	</modules>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.openconcerto</groupId>
+				<artifactId>org.openconcerto.modules.axis.soap</artifactId>
+				<version>1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openconcerto</groupId>
+				<artifactId>
+					org.openconcerto.modules.common.http.google
+				</artifactId>
+				<version>1.0</version>
+			</dependency>
+			<dependency>
+				<groupId>org.openconcerto</groupId>
+				<artifactId>
+					org.openconcerto.modules.common.http
+				</artifactId>
+				<version>1.0</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 </project>

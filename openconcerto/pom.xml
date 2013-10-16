@@ -4,7 +4,8 @@
 	<parent>
 		<groupId>org.openconcerto</groupId>
 		<artifactId>openconcerto-parent</artifactId>
-		<version>1.2b</version>
+		<version>1.2b3</version>
+		<relativePath>../</relativePath>
 	</parent>
 	<artifactId>openconcerto</artifactId>
 	<name>OpenConcerto</name>
@@ -82,6 +83,16 @@
 		<dependency>
 			<groupId>com.lowagie</groupId>
 			<artifactId>itext</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>bcmail-jdk14</artifactId>
+					<groupId>bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bcprov-jdk14</artifactId>
+					<groupId>bouncycastle</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>oro</groupId>
@@ -106,8 +117,8 @@
 			<artifactId>jdom</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>jgrapht</groupId>
-			<artifactId>jgrapht</artifactId>
+			<groupId>org.jgrapht</groupId>
+			<artifactId>jgrapht-jdk1.5</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.jopendocument</groupId>

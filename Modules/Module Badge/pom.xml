@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>modules.badge</artifactId>
+	<artifactId>org.openconcerto.modules.badge</artifactId>
 
 	<name>Module Badge</name>
 	<description>Open Concerto: Module badge</description>
@@ -13,7 +13,8 @@
 	<parent>
 		<artifactId>openconcerto-modules</artifactId>
 		<groupId>org.openconcerto</groupId>
-		<version>1.2b</version>
+		<version>1.2b3</version>
+		<relativePath>../</relativePath>
 	</parent>
 	<build>
 		<resources>
@@ -37,4 +38,8 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<version>1.0</version>
+	<organization>
+		<name>ILM Informatique</name>
+	</organization>
 </project>

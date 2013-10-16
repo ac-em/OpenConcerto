@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>modules.ebdics</artifactId>
+	<artifactId>org.openconcerto.modules.ebdics</artifactId>
 
 	<name>Module EBDICS</name>
 	<description>Open Concerto: Module EBDICS</description>
@@ -13,7 +13,8 @@
 	<parent>
 		<artifactId>openconcerto-modules</artifactId>
 		<groupId>org.openconcerto</groupId>
-		<version>1.2b</version>
+		<version>1.2b3</version>
+		<relativePath>../</relativePath>
 	</parent>
 	<build>
 		<resources>
@@ -32,14 +33,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.openconcerto</groupId>
-			<artifactId>openconcerto</artifactId>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
-			<scope>provided</scope>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>xml-apis</groupId>
@@ -65,5 +61,28 @@
 			<groupId>org.apache.santuario</groupId>
 			<artifactId>xmlsec</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.openconcerto</groupId>
+			<artifactId>openconcerto</artifactId>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<artifactId>bctsp-jdk14</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bcprov-jdk14</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>bcmail-jdk14</artifactId>
+					<groupId>org.bouncycastle</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
+	<version>1.0</version>
+	<organization>
+		<name>ILM Informatique</name>
+	</organization>
 </project>
